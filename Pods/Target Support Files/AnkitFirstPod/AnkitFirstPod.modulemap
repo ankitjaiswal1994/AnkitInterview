@@ -1,0 +1,6 @@
+framework module AnkitFirstPod {
+  umbrella header "AnkitFirstPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
