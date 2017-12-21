@@ -66,7 +66,7 @@
 		072B66C81F5A8A1A006ABA9B = {
 			isa = PBXGroup;
 			children = (
-				BBBAC2A21FEA76CA0049948E /* circleci */,
+				BBBAC2A31FEA76E80049948E /* config.yml */,
 				072B66D31F5A8A1B006ABA9B /* AnkitInterView */,
 				072B66D21F5A8A1B006ABA9B /* Products */,
 				81BF95F92C1EEA9F3B194B20 /* Pods */,
@@ -148,14 +148,6 @@
 				B12B9EB5BC6A7A16E9BDDC7C /* Pods-AnkitInterView.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		BBBAC2A21FEA76CA0049948E /* circleci */ = {
-			isa = PBXGroup;
-			children = (
-				BBBAC2A31FEA76E80049948E /* config.yml */,
-			);
-			path = circleci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
