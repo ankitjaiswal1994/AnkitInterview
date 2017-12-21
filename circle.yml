@@ -31,7 +31,7 @@ command: pod install
 # in the Artifacts tab
 #- store_test_results:
 #path: test_output/report.xml
-#- store_artifacts:
+- store_artifacts:
 path: /tmp/test-results
 destination: scan-test-results
 - store_artifacts:
