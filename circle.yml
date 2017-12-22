@@ -15,8 +15,6 @@ jobs:
       - image: circleci/ios:api-26-alpha
 
 steps:
-      - checkout
-
       - run:
           name: Creating Dummy Artifacts
           command: |
