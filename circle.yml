@@ -8,7 +8,7 @@ machine:
     version: "7.3"
   environment:
     # please specify your code signing identity name here
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Acme Inc. (GL31ZZ3256)"
+    GYM_CODE_SIGNING_IDENTITY: "iPhone Developer: aashish dhawan (2X9KD75NDJ)"
 
 test:
   override:
