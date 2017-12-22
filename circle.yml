@@ -1,10 +1,6 @@
 machine:
  xcode:
  version: “9.1”
-deployment:
- staging:
- branch: [master]
- commands:
- — ./scripts/add-key.sh
- — bundle exec fastlane inhouse
- — ./scripts/remove-key.sh
+dependencies:
+   override:
+     - pod install:
