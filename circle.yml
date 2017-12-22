@@ -22,8 +22,8 @@ steps:
           command: ./gradlew lint test
 
       - store_artifacts:
-          path: app/build/reports
-          destination: reports
+          path: /Users/distiller/AnkitInterview/AnkitInterview.ipa
+          destination: ipa/
 
       - store_test_results:
           path: app/build/test-results
@@ -31,7 +31,3 @@ steps:
       - run:
           name: Initial build
           command: ./gradlew clean assembleDebug --no-daemon --stacktrace
-
-      - store_artifacts:
-          path: app/build/outputs/ipa/
-          destination: ipa/
