@@ -17,17 +17,6 @@ jobs:
 steps:
       - checkout
 
-      - run:
-          name: Run Tests
-          command: ./gradlew lint test
-
       - store_artifacts:
           path: /Users/distiller/AnkitInterview/AnkitInterview.ipa
           destination: ipa/
-
-      - store_test_results:
-          path: app/build/test-results
-
-      - run:
-          name: Initial build
-          command: ./gradlew clean assembleDebug --no-daemon --stacktrace
