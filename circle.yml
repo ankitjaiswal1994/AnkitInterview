@@ -4,3 +4,12 @@ machine:
 dependencies:
    override:
      - pod install:
+jobs:
+  build:
+    working_directory: ~/AnkitInterview
+    branches:
+        only:
+        - master
+
+    docker:
+      - image: circleci/ios:api-26-alpha
