@@ -1,75 +1,33 @@
-version: 2
-jobs:
-  build-and-test:
-    macos:
-      xcode: "9.0"
-    working_directory: /Users/distiller/project
-    environment:
-      FL_OUTPUT_DIR: /Users/distiller/project/output
-      FASTLANE_LANE: test
-    steps:
-      - checkout
-      - run: mkdir $FL_OUTPUT_DIR
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - run:
-          command: cp $FL_OUTPUT_DIR/scan/report.junit $FL_OUTPUT_DIR/scan/results.xml
-          when: always
-      - store_artifacts:
-          path: /Users/distiller/project/output
-      - store_test_results:
-          path: /Users/distiller/project/output/scan
+general:
+  # if the application is *not* in the root of the repo but
+  # in the sub-directory called "ios-app"
+  build_dir: ios-app
 
-  adhoc:
-    macos:
-      xcode: "9.0"
-    working_directory: /Users/distiller/project
-    environment:
-      FL_OUTPUT_DIR: /Users/distiller/project/output
-      FASTLANE_LANE: adhoc
-    shell: /bin/bash --login -o pipefail
-    steps:
-      - checkout
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: /Users/distiller/project/output/Game.ipa
+machine:
+  xcode:
+    version: "7.3"
+  environment:
+    # please specify your code signing identity name here
+    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Acme Inc. (GL31ZZ3256)"
 
-  beta:
-    macos:
-      xcode: "9.0"
-    working_directory: /Users/distiller/project
-    environment:
-      FL_OUTPUT_DIR: /Users/distiller/project/output
-      FASTLANE_LANE: beta
-    shell: /bin/bash --login -o pipefail
-    steps:
-      - checkout
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: /Users/distiller/project/output/Game.ipa
+test:
+  override:
+    - set -o pipefail &&
+      xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        -sdk iphonesimulator
+        -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
+        -workspace MyWorkspace.xcworkspace
+        -scheme "My Scheme"
+        clean build test |
+      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
+      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
-workflows:
-  version: 2
-  build-test-adhoc:
-    jobs:
-      - build-and-test
-      - adhoc:
-          filters:
-            branches:
-              only: development
-          requires:
-            - build-and-test
-      #- beta:
-          #filters:
-            #branches:
-              #only: master
-          #requires:
-            #- build-and-test
+deployment:
+  beta_distribution: # just a label, can be anything
+    branch: master
+      commands:
+        # this will build the ipa file
+        - fastlane gym --scheme "App" --workspace "App.xcworkspace"
