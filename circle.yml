@@ -1,26 +1,10 @@
-general:
-  # if the application is *not* in the root of the repo but
-  # in the sub-directory called "ios-app"
-  build_dir: ios-app
-
 machine:
-  xcode:
-    version: "7.3"
-  environment:
-    # please specify your code signing identity name here
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Developer: aashish dhawan (2X9KD75NDJ)"
-
-test:
-  override:
-    - set -o pipefail &&
-      xcodebuild
-        CODE_SIGNING_REQUIRED=NO
-        CODE_SIGN_IDENTITY=
-        PROVISIONING_PROFILE=
-        -sdk iphonesimulator
-        -destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
-        -workspace AnkitInterview.xcworkspace
-        -scheme "AnkitInterview"
-        clean build test |
-      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
-      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+ xcode:
+ version: “9.1”
+deployment:
+ staging:
+ branch: [master]
+ commands:
+ — ./scripts/add-key.sh
+ — bundle exec fastlane inhouse
+ — ./scripts/remove-key.sh
