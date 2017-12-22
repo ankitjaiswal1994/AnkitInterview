@@ -24,10 +24,3 @@ test:
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
-
-deployment:
-  beta_distribution: # just a label, can be anything
-    branch: master
-      commands:
-        # this will build the ipa file
-        - fastlane gym --scheme "App" --workspace "App.xcworkspace"
