@@ -19,6 +19,7 @@
 		072B66E81F5A966A006ABA9B /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66E71F5A959B006ABA9B /* AppNetworking.swift */; };
 		072B66F11F5AB747006ABA9B /* AISongsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66F01F5AB747006ABA9B /* AISongsTVCell.swift */; };
 		B56FCDC09C4ACE41D7F74DFA /* Pods_AnkitInterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */; };
+		BB43C1B61FF23D64009FF3C3 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BB43C1B51FF23D64009FF3C3 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnkitInterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE99BC0B0809C9B7838711A4 /* Pods-AnkitInterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkitInterView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView.debug.xcconfig"; sourceTree = "<group>"; };
 		B12B9EB5BC6A7A16E9BDDC7C /* Pods-AnkitInterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkitInterView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView.release.xcconfig"; sourceTree = "<group>"; };
+		BB43C1B51FF23D64009FF3C3 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		072B66C81F5A8A1A006ABA9B = {
 			isa = PBXGroup;
 			children = (
+				BB43C1B51FF23D64009FF3C3 /* .travis.yml */,
 				072B66D31F5A8A1B006ABA9B /* AnkitInterView */,
 				072B66D21F5A8A1B006ABA9B /* Products */,
 				81BF95F92C1EEA9F3B194B20 /* Pods */,
@@ -211,6 +214,7 @@
 			files = (
 				072B66DF1F5A8A1B006ABA9B /* LaunchScreen.storyboard in Resources */,
 				072B66DC1F5A8A1B006ABA9B /* Assets.xcassets in Resources */,
+				BB43C1B61FF23D64009FF3C3 /* .travis.yml in Resources */,
 				072B66DA1F5A8A1B006ABA9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
