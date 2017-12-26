@@ -4,6 +4,7 @@ xcode_project: AnkitInterview.xcodeproj
 xcode_scheme: AnkitInterview
 xcode_sdk: iphonesimulator8.4
 before_install:
+- pod install
 - sudo gem install fastlane
 env:
   global:
