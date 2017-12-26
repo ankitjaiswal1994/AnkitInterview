@@ -41,12 +41,13 @@ platform :ios do
     )
 
     import_certificate(
-    certificate_path: "fastlane/Certificates/Certificates.p12"
+    certificate_path: "fastlane/Certificates/Certificates.p12",
     certificate_password: ENV["KEY_PASSWORD"],
     keychain_name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)"
     )
 
-    gym(scheme: "AnkitInterView") # Build your app - more options available
+    gym(scheme: "AnkitInterView",
+    export_method: "app-store") # Build your app - more options available
     pilot
 
     # sh "your_script.sh"
