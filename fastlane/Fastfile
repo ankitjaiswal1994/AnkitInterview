@@ -40,6 +40,12 @@ platform :ios do
       add_to_search_list: true
     )
 
+    import_certificate(
+    certificate_path: "fastlane/Certificates/Certificates.p12"
+    certificate_password: ENV["KEY_PASSWORD"],
+    keychain_name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)"
+    )
+
     gym(scheme: "AnkitInterView") # Build your app - more options available
     pilot
 
