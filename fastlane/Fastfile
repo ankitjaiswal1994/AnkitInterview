@@ -33,7 +33,7 @@ platform :ios do
     # match(type: "appstore") # more information: https://codesigning.guide
     create_keychain(
       name: ENV["iPhone Distribution: aashish dhawan (KPF9FKVCA2)"],
-      password: ENV["Home@123"],
+      password: ENV["MATCH_PASSWORD"],
       default_keychain: true,
       unlock: true,
       timeout: 3600,
