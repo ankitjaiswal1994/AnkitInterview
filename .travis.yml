@@ -6,6 +6,8 @@ xcode_sdk: iphonesimulator8.4
 before_install:
 - pod repo update
 - gem update fastlane
+- echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
+
 env:
   global:
   - secure: akIuKXLDlISivURKCeh/oiyjQUQgce3cCB8rv5MtHBCfcPaRFXvxoOVGYGOHFD5G3/YWSoOdzLjGyQ4yedGgTM1qvJQS83Ag2d0101dO0rRJOuA1RoGn77ENesu4Qt3eUu51jroVKxYNGlS9cvvx2xogM7va9e08+VLei3TkeADkxNXUrXoKvcri4BsFgLu2qXpZw+Vr6xW+Np5xC3WhPFlDthrj2PwMURhB01OhMpAX7brRQmOBBsE8/zm0vIZt4G3ZcmPmSJKJU+7vkuXdKZ19vm+t1jsIDxD21k1kxAYLNs6PrVWIAZDMMfvxzoiUf4A7L3dVMg8qN6M18tsVq/kxwOiIPQJ7KpmuFu0nVX5WZPSbmIQbDmQQVqtC7dXITYimOW6IoWU9qNIv+cFMYo5y3ZqoEjd2cZMuHTEr0+Irxswuu0yxn6tWtz3Qs7Ne8m/fd+JKdUbthSY/WKi9FRXpQBmlrNu0f1ilPqUxVIxH2fVhmwIV3qLCOkisOS6R8TjSAoaKvWwE4ZsaC4YmQuOlT2HwXekfxh5/fTzDhhycVzZQllK8ZZ2TCY23vKXtVtzLEuxm5UoLSGJ3idr7fojRkASVku/VsxPhnBbOd0bnkL6wYudQ8NDNXJRIB/kWOcJNO9xFVehMKfKzQ5j7vs5/v7Mp0Yn7rtIg+2J7rVw=
