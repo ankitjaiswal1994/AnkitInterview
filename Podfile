@@ -10,7 +10,4 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'AlamofireNetworkActivityIndicator'
 pod 'SDWebImage'
-pod 'AnkitFirstPod'
-pod 'CrownStackSugarFunctions'
-
 end

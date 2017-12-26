@@ -1,6 +1,0 @@
-framework module CrownStackSugarFunctions {
-  umbrella header "CrownStackSugarFunctions-umbrella.h"
-
-  export *
-  module * { export * }
-}

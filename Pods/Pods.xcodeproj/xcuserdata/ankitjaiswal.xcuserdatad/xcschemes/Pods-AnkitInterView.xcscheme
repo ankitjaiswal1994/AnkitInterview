@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1DD257346BC9DA3718D44BD97CAA3CFD"
+               BlueprintIdentifier = "35F4F4700D6E18617E6B0EA3FAAB92F2"
                BuildableName = "Pods_AnkitInterView.framework"
                BlueprintName = "Pods-AnkitInterView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1DD257346BC9DA3718D44BD97CAA3CFD"
+            BlueprintIdentifier = "35F4F4700D6E18617E6B0EA3FAAB92F2"
             BuildableName = "Pods_AnkitInterView.framework"
             BlueprintName = "Pods-AnkitInterView"
             ReferencedContainer = "container:Pods.xcodeproj">
