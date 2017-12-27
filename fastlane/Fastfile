@@ -49,6 +49,7 @@ platform :ios do
     sigh(
     adhoc: true,
     username: "aashishdhawan@gmail.com",
+    password: "G0lm@l@1234",
     team_id: "KPF9FKVCA2",
     provisioning_name: "match AppStore com.crownstack.testing"
     )
