@@ -42,8 +42,15 @@ platform :ios do
 
     import_certificate(
     certificate_path: "fastlane/Certificates/Certificates.p12",
-    certificate_password: ENV["KEY_PASSWORD"],
+    certificate_password: "Home@123",
     keychain_name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)"
+    )
+
+    sigh(
+    adhoc: true,
+    username: "aashishdhawan@gmail.com",
+    team_id: "KPF9FKVCA2",
+    provisioning_name: "match AppStore com.crownstack.testing"
     )
 
     gym(scheme: "AnkitInterView",
