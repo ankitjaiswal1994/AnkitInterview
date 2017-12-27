@@ -31,6 +31,7 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
+    FASTLANE_PASSWORD = "G0lm@l@1234"
     create_keychain(
       name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)",
       password: "Home@123",
@@ -49,7 +50,6 @@ platform :ios do
     sigh(
     adhoc: true,
     username: "aashishdhawan@gmail.com",
-    cert_id: "G0lm@l@1234",
     team_id: "KPF9FKVCA2",
     provisioning_name: "match AppStore com.crownstack.testing"
     )
