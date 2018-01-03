@@ -30,37 +30,23 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    FASTLANE_PASSWORD = "G0lm@l@1234"
-    create_keychain(
-      name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)",
-      password: "Home@123",
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      add_to_search_list: true
-    )
-
-    import_certificate(
-    certificate_path: "fastlane/Certificates/Certificates.p12",
-    certificate_password: "Home@123",
-    keychain_name: "iPhone Distribution: aashish dhawan (KPF9FKVCA2)"
-    )
-
-    sigh(
-    adhoc: true,
-    username: "aashishdhawan@gmail.com",
-    team_id: "KPF9FKVCA2",
-    provisioning_name: "match AppStore com.crownstack.testing"
-    )
-
-    gym(scheme: "AnkitInterView",
-    export_method: "app-store") # Build your app - more options available
+    match(type: "appstore") # more information: https://codesigning.guide
+    increment_build_number
+    gym(scheme: "AnkitInterView") # Build your app - more options available
     pilot
-
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)
   end
+
+  lane :tester do
+    match(type: "appstore", app_identifier: "com.crownstack.testers") # more information: https://codesigning.guide
+    add_badge(dark: true)
+    gym(scheme: "AnkitInterViewTester") # Build your app - more options available
+    pilot(app_identifier: "com.crownstack.testers")
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
 
   desc "Deploy a new version to the App Store"
   lane :release do
