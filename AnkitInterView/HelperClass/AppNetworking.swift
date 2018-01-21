@@ -88,6 +88,7 @@ class AppNetworking {
 extension AppNetworking {
     
     static func showLoader() {
+        print("Ankit")
         NetworkActivityIndicatorManager.shared.isEnabled = true
     }
     
