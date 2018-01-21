@@ -21,6 +21,12 @@
 		1582C765F1751018A278FE3E /* Pods_AnkitInterViewTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C079E668FCD2F103B7CD849 /* Pods_AnkitInterViewTester.framework */; };
 		8EF11E6ADC6BCDB12C11A05D /* Pods_AnkitInterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */; };
 		B56FCDC09C4ACE41D7F74DFA /* Pods_AnkitInterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */; };
+		BB2717B0200786CE00F01C75 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717AF200786CE00F01C75 /* ZFRippleButton.swift */; };
+		BB2717B720078DE200F01C75 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B220078DE200F01C75 /* CGRectEx.swift */; };
+		BB2717B820078DE200F01C75 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B320078DE200F01C75 /* FadeTransition.swift */; };
+		BB2717B920078DE200F01C75 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B420078DE200F01C75 /* SpinerLayer.swift */; };
+		BB2717BA20078DE200F01C75 /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B520078DE200F01C75 /* TimerEx.swift */; };
+		BB2717BB20078DE200F01C75 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B620078DE200F01C75 /* TransitionSubmitButton.swift */; };
 		BB421ACB1FF38322007432CC /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D4741F5AF3CB003736C0 /* Webservices.swift */; };
 		BB421ACC1FF38322007432CC /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66E71F5A959B006ABA9B /* AppNetworking.swift */; };
 		BB421ACD1FF38322007432CC /* AISongsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66F01F5AB747006ABA9B /* AISongsTVCell.swift */; };
@@ -55,6 +61,12 @@
 		3C079E668FCD2F103B7CD849 /* Pods_AnkitInterViewTester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnkitInterViewTester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DDE513A8F7E2C67A990ABC /* Pods-AnkitInterViewTester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkitInterViewTester.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnkitInterViewTester/Pods-AnkitInterViewTester.release.xcconfig"; sourceTree = "<group>"; };
 		887A8A860F1C1E72B02207FC /* Pods-AnkitInterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkitInterView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2717AF200786CE00F01C75 /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
+		BB2717B220078DE200F01C75 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		BB2717B320078DE200F01C75 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		BB2717B420078DE200F01C75 /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
+		BB2717B520078DE200F01C75 /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
+		BB2717B620078DE200F01C75 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		BB421ADF1FF38322007432CC /* AnkitInterViewTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnkitInterViewTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB421AE01FF38322007432CC /* AnkitInterView copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AnkitInterView copy-Info.plist"; path = "/Users/ankitjaiswal/Desktop/AnkitInterview/AnkitInterview/AnkitInterView copy-Info.plist"; sourceTree = "<absolute>"; };
 		BB43C1B51FF23D64009FF3C3 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -113,6 +125,8 @@
 		072B66D31F5A8A1B006ABA9B /* AnkitInterView */ = {
 			isa = PBXGroup;
 			children = (
+				BB2717B120078DE200F01C75 /* Classes */,
+				BB2717AF200786CE00F01C75 /* ZFRippleButton.swift */,
 				BB43C1B51FF23D64009FF3C3 /* .travis.yml */,
 				07DD70FC1F5C1207006EFB2D /* Controller */,
 				07DD70FB1F5C0B34006EFB2D /* View */,
@@ -180,6 +194,18 @@
 				82DDE513A8F7E2C67A990ABC /* Pods-AnkitInterViewTester.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB2717B120078DE200F01C75 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB2717B220078DE200F01C75 /* CGRectEx.swift */,
+				BB2717B320078DE200F01C75 /* FadeTransition.swift */,
+				BB2717B420078DE200F01C75 /* SpinerLayer.swift */,
+				BB2717B520078DE200F01C75 /* TimerEx.swift */,
+				BB2717B620078DE200F01C75 /* TransitionSubmitButton.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +443,13 @@
 				0717D4781F5AFA53003736C0 /* AIMichaelSongsInfo.swift in Sources */,
 				0717D4711F5ADD5F003736C0 /* AIMichaelSongDetailVC.swift in Sources */,
 				0717D4731F5AE4F9003736C0 /* AISongsDetailTVCell.swift in Sources */,
+				BB2717B820078DE200F01C75 /* FadeTransition.swift in Sources */,
+				BB2717B720078DE200F01C75 /* CGRectEx.swift in Sources */,
+				BB2717B0200786CE00F01C75 /* ZFRippleButton.swift in Sources */,
 				072B66D71F5A8A1B006ABA9B /* AIMichaelSongVC.swift in Sources */,
+				BB2717B920078DE200F01C75 /* SpinerLayer.swift in Sources */,
+				BB2717BA20078DE200F01C75 /* TimerEx.swift in Sources */,
+				BB2717BB20078DE200F01C75 /* TransitionSubmitButton.swift in Sources */,
 				072B66D51F5A8A1B006ABA9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

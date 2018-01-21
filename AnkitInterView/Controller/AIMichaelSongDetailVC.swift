@@ -12,6 +12,7 @@ class AIMichaelSongDetailVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var objModal : AIMichaelSongsInfo!
+    var count = 0
 
 // MARK: -  View Controller Life Cycle Methods
 
@@ -31,7 +32,23 @@ class AIMichaelSongDetailVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-// MARK: -  Initial SetUp Method
+    @IBAction func rippleButton(_ sender: TKTransitionSubmitButton) {
+    
+        count = count + 1
+        if count == 5 {
+           // sender.isUserInteractionEnabled = false
+            sender.startLoadingAnimation()
+        } else if count == 6 {
+            sender.startFinishAnimation(0, completion: {
+                
+            })
+        } else if count > 6 {
+            sender.returnToOriginalState()
+        }
+        
+    }
+    
+    // MARK: -  Initial SetUp Method
     
     func  initialSetUp() {
         self.tableView.estimatedRowHeight = 44.0
