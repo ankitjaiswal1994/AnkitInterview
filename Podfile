@@ -16,7 +16,3 @@ target 'AnkitInterView' do
 testing_pods
 end
 
-target 'AnkitInterViewTester' do
-  testing_pods
-end
-

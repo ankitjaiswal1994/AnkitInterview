@@ -18,7 +18,6 @@
 		072B66DF1F5A8A1B006ABA9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072B66DD1F5A8A1B006ABA9B /* LaunchScreen.storyboard */; };
 		072B66E81F5A966A006ABA9B /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66E71F5A959B006ABA9B /* AppNetworking.swift */; };
 		072B66F11F5AB747006ABA9B /* AISongsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66F01F5AB747006ABA9B /* AISongsTVCell.swift */; };
-		1582C765F1751018A278FE3E /* Pods_AnkitInterViewTester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C079E668FCD2F103B7CD849 /* Pods_AnkitInterViewTester.framework */; };
 		8EF11E6ADC6BCDB12C11A05D /* Pods_AnkitInterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */; };
 		B56FCDC09C4ACE41D7F74DFA /* Pods_AnkitInterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39606A0C7EB703AAD33AB792 /* Pods_AnkitInterView.framework */; };
 		BB2717B0200786CE00F01C75 /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717AF200786CE00F01C75 /* ZFRippleButton.swift */; };
@@ -27,18 +26,6 @@
 		BB2717B920078DE200F01C75 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B420078DE200F01C75 /* SpinerLayer.swift */; };
 		BB2717BA20078DE200F01C75 /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B520078DE200F01C75 /* TimerEx.swift */; };
 		BB2717BB20078DE200F01C75 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2717B620078DE200F01C75 /* TransitionSubmitButton.swift */; };
-		BB421ACB1FF38322007432CC /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D4741F5AF3CB003736C0 /* Webservices.swift */; };
-		BB421ACC1FF38322007432CC /* AppNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66E71F5A959B006ABA9B /* AppNetworking.swift */; };
-		BB421ACD1FF38322007432CC /* AISongsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66F01F5AB747006ABA9B /* AISongsTVCell.swift */; };
-		BB421ACE1FF38322007432CC /* AIMichaelSongsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D4771F5AFA53003736C0 /* AIMichaelSongsInfo.swift */; };
-		BB421ACF1FF38322007432CC /* AIMichaelSongDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D4701F5ADD5F003736C0 /* AIMichaelSongDetailVC.swift */; };
-		BB421AD01FF38322007432CC /* AISongsDetailTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D4721F5AE4F9003736C0 /* AISongsDetailTVCell.swift */; };
-		BB421AD11FF38322007432CC /* AIMichaelSongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66D61F5A8A1B006ABA9B /* AIMichaelSongVC.swift */; };
-		BB421AD21FF38322007432CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B66D41F5A8A1B006ABA9B /* AppDelegate.swift */; };
-		BB421AD61FF38322007432CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072B66DD1F5A8A1B006ABA9B /* LaunchScreen.storyboard */; };
-		BB421AD71FF38322007432CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072B66DB1F5A8A1B006ABA9B /* Assets.xcassets */; };
-		BB421AD81FF38322007432CC /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BB43C1B51FF23D64009FF3C3 /* .travis.yml */; };
-		BB421AD91FF38322007432CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072B66D81F5A8A1B006ABA9B /* Main.storyboard */; };
 		BB43C1B61FF23D64009FF3C3 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BB43C1B51FF23D64009FF3C3 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +54,6 @@
 		BB2717B420078DE200F01C75 /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		BB2717B520078DE200F01C75 /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
 		BB2717B620078DE200F01C75 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
-		BB421ADF1FF38322007432CC /* AnkitInterViewTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnkitInterViewTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB421AE01FF38322007432CC /* AnkitInterView copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AnkitInterView copy-Info.plist"; path = "/Users/ankitjaiswal/Desktop/AnkitInterview/AnkitInterview/AnkitInterView copy-Info.plist"; sourceTree = "<absolute>"; };
 		BB43C1B51FF23D64009FF3C3 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		E79F281C6FBB87024F0B3E85 /* Pods-AnkitInterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnkitInterView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,14 +66,6 @@
 			files = (
 				B56FCDC09C4ACE41D7F74DFA /* Pods_AnkitInterView.framework in Frameworks */,
 				8EF11E6ADC6BCDB12C11A05D /* Pods_AnkitInterView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB421AD31FF38322007432CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1582C765F1751018A278FE3E /* Pods_AnkitInterViewTester.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				072B66D11F5A8A1B006ABA9B /* AnkitInterView.app */,
-				BB421ADF1FF38322007432CC /* AnkitInterViewTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,7 +197,6 @@
 				072B66CE1F5A8A1B006ABA9B /* Frameworks */,
 				072B66CF1F5A8A1B006ABA9B /* Resources */,
 				3488079809DC2DE10CDEF9C6 /* [CP] Embed Pods Frameworks */,
-				4AD9E9FC502D7335A830D7A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,26 +205,6 @@
 			name = AnkitInterView;
 			productName = AnkitInterView;
 			productReference = 072B66D11F5A8A1B006ABA9B /* AnkitInterView.app */;
-			productType = "com.apple.product-type.application";
-		};
-		BB421AC81FF38322007432CC /* AnkitInterViewTester */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BB421ADC1FF38322007432CC /* Build configuration list for PBXNativeTarget "AnkitInterViewTester" */;
-			buildPhases = (
-				62FFF3EC7668BE3308564BB3 /* [CP] Check Pods Manifest.lock */,
-				BB421ACA1FF38322007432CC /* Sources */,
-				BB421AD31FF38322007432CC /* Frameworks */,
-				BB421AD51FF38322007432CC /* Resources */,
-				9F98ED7C5A7ABB3D7D9CA8BB /* [CP] Embed Pods Frameworks */,
-				9ED219E3DFBAEA23F828E19D /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AnkitInterViewTester;
-			productName = AnkitInterView;
-			productReference = BB421ADF1FF38322007432CC /* AnkitInterViewTester.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,9 +220,6 @@
 					072B66D01F5A8A1B006ABA9B = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
-					};
-					BB421AC81FF38322007432CC = {
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -285,7 +238,6 @@
 			projectRoot = "";
 			targets = (
 				072B66D01F5A8A1B006ABA9B /* AnkitInterView */,
-				BB421AC81FF38322007432CC /* AnkitInterViewTester */,
 			);
 		};
 /* End PBXProject section */
@@ -299,17 +251,6 @@
 				072B66DC1F5A8A1B006ABA9B /* Assets.xcassets in Resources */,
 				BB43C1B61FF23D64009FF3C3 /* .travis.yml in Resources */,
 				072B66DA1F5A8A1B006ABA9B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB421AD51FF38322007432CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB421AD61FF38322007432CC /* LaunchScreen.storyboard in Resources */,
-				BB421AD71FF38322007432CC /* Assets.xcassets in Resources */,
-				BB421AD81FF38322007432CC /* .travis.yml in Resources */,
-				BB421AD91FF38322007432CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +281,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -355,79 +296,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4AD9E9FC502D7335A830D7A8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		62FFF3EC7668BE3308564BB3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AnkitInterViewTester-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9ED219E3DFBAEA23F828E19D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterViewTester/Pods-AnkitInterViewTester-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F98ED7C5A7ABB3D7D9CA8BB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterViewTester/Pods-AnkitInterViewTester-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnkitInterViewTester/Pods-AnkitInterViewTester-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnkitInterView/Pods-AnkitInterView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -451,21 +320,6 @@
 				BB2717BA20078DE200F01C75 /* TimerEx.swift in Sources */,
 				BB2717BB20078DE200F01C75 /* TransitionSubmitButton.swift in Sources */,
 				072B66D51F5A8A1B006ABA9B /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB421ACA1FF38322007432CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB421ACB1FF38322007432CC /* Webservices.swift in Sources */,
-				BB421ACC1FF38322007432CC /* AppNetworking.swift in Sources */,
-				BB421ACD1FF38322007432CC /* AISongsTVCell.swift in Sources */,
-				BB421ACE1FF38322007432CC /* AIMichaelSongsInfo.swift in Sources */,
-				BB421ACF1FF38322007432CC /* AIMichaelSongDetailVC.swift in Sources */,
-				BB421AD01FF38322007432CC /* AISongsDetailTVCell.swift in Sources */,
-				BB421AD11FF38322007432CC /* AIMichaelSongVC.swift in Sources */,
-				BB421AD21FF38322007432CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,52 +500,6 @@
 			};
 			name = Release;
 		};
-		BB421ADD1FF38322007432CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F5DF9A30E04D2638C79C43 /* Pods-AnkitInterViewTester.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: aashish dhawan (KPF9FKVCA2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: aashish dhawan (KPF9FKVCA2)";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KPF9FKVCA2;
-				INFOPLIST_FILE = "AnkitInterView copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crownstack.testers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "299a4605-309a-4b6c-a91d-7b085373d567";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.crownstack.testers";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		BB421ADE1FF38322007432CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82DDE513A8F7E2C67A990ABC /* Pods-AnkitInterViewTester.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: aashish dhawan (KPF9FKVCA2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: aashish dhawan (KPF9FKVCA2)";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = KPF9FKVCA2;
-				INFOPLIST_FILE = "AnkitInterView copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crownstack.testers;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "299a4605-309a-4b6c-a91d-7b085373d567";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.crownstack.testers";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,15 +517,6 @@
 			buildConfigurations = (
 				072B66E41F5A8A1B006ABA9B /* Debug */,
 				072B66E51F5A8A1B006ABA9B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BB421ADC1FF38322007432CC /* Build configuration list for PBXNativeTarget "AnkitInterViewTester" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB421ADD1FF38322007432CC /* Debug */,
-				BB421ADE1FF38322007432CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
